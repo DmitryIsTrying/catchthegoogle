@@ -1,4 +1,4 @@
-import { getGooglePoints, getPlayerPoints, playAgain } from "../../../core/state-manager.js";
+import { getGooglePoints, getPlayerPoints, playAgain } from "../../../core/state-manager-server.js";
 
 export function LoseComponent() {
   const element = document.createElement("div");

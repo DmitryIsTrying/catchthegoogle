@@ -9,7 +9,7 @@ import {
   subscribe,
   toggleSound,
   unsubscribe,
-} from "../../../core/state-manager.js";
+} from "../../../core/state-manager-server.js";
 
 export function SettingsComponent() {
   const element = document.createElement("div");
@@ -91,6 +91,7 @@ async function render(element) {
   optionGrid.selected = true;
 
   const optionWin = selectWin.querySelector(`option[value="${pointsToWin}"]`);
+
   optionWin.selected = true;
 
   const optionLose = selectLose.querySelector(`option[value="${pointsToLose}"]`);

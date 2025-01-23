@@ -4,7 +4,7 @@ import {
   getPlayerPoints,
   subscribe,
   unsubscribe,
-} from "../../../core/state-manager.js";
+} from "../../../core/state-manager-server.js";
 
 export function ResultPanelComponent() {
   const element = document.createElement("div");

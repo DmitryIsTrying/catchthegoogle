@@ -7,7 +7,7 @@ const stateManager = (function () {
       /**
        * in milliseconds
        */
-      googleJumpInterval: 2000,
+      googleJumpInterval: 3000,
       gridSize: {
         rowsCount: 4,
         columnCount: 4,
@@ -166,7 +166,9 @@ const stateManager = (function () {
       state.settings.isSoundsOn = !state.settings.isSoundsOn;
       notifyObservers(EVENTS.SETTINGS_CHANGED);
     },
-    async setGrid(gridSize) {
+    async setGrid(e) {
+      const gridSize = e.target.value;
+
       const rowsCount = gridSize.split("x")[0];
       const columnCount = gridSize.split("x")[1];
       state.settings.gridSize = {
@@ -175,11 +177,13 @@ const stateManager = (function () {
       };
       notifyObservers(EVENTS.SETTINGS_CHANGED);
     },
-    async setPointsToWin(counts) {
+    async setPointsToWin(e) {
+      const counts = e.target.value;
       state.settings.pointsToWin = Number(counts);
       notifyObservers(EVENTS.SETTINGS_CHANGED);
     },
-    async setPointsToLose(counts) {
+    async setPointsToLose(e) {
+      const counts = e.target.value;
       state.settings.pointsToLose = Number(counts);
       notifyObservers(EVENTS.SETTINGS_CHANGED);
     },

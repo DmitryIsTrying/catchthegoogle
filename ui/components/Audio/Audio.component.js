@@ -1,5 +1,5 @@
 import { EVENTS } from "../../../core/constants.js";
-import { getSettings, subscribe } from "../../../core/state-manager.js";
+import { getSettings, subscribe } from "../../../core/state-manager-server.js";
 
 export function AudioComponent() {
   const catchAudio = new Audio("./assets/sounds/catch.wav");

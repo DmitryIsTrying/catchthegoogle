@@ -1,5 +1,5 @@
 import { EVENTS, GAME_STATES } from "../../core/constants.js";
-import { getGameStatus, subscribe } from "../../core/state-manager.js";
+import { getGameStatus, subscribe } from "../../core/state-manager-server.js";
 import { AudioComponent } from "./Audio/Audio.component.js";
 import { GridComponent } from "./Grid/Grid.component.js";
 import { LoseComponent } from "./Lose/Lose.component.js";
@@ -67,7 +67,7 @@ async function render(element, localState) {
 
     case GAME_STATES.WIN: {
       const winComponent = WinComponent();
-      addCleanupToLocalState(localState, WinComponent.cleanup);
+      addCleanupToLocalState(localState, winComponent.cleanup);
       mainElement.append(winComponent.element);
       break;
     }

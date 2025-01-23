@@ -4,7 +4,7 @@ import {
   getPlayerPosition,
   subscribe,
   unsubscribe,
-} from "../../../../core/state-manager.js";
+} from "../../../../core/state-manager-server.js";
 import { GoogleComponent } from "../../common/Google/Google.component.js";
 import { PlayerComponent } from "../../common/Player/Player.component.js";
 

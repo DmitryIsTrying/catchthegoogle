@@ -1,4 +1,4 @@
-import { getPlayerPoints, playAgain } from "../../../core/state-manager.js";
+import { getPlayerPoints, playAgain } from "../../../core/state-manager-server.js";
 
 export function WinComponent() {
   const element = document.createElement("div");

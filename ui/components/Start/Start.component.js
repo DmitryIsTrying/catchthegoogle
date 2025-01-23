@@ -1,4 +1,4 @@
-import { start } from "../../../core/state-manager.js";
+import { start } from "../../../core/state-manager-server.js";
 
 export function StartComponent() {
   const element = document.createElement("button");

@@ -1,5 +1,5 @@
 import { MOVING_DIRECTIONS } from "../../../core/constants.js";
-import { getGridSize, movePlayer } from "../../../core/state-manager.js";
+import { getGridSize, movePlayer } from "../../../core/state-manager-server.js";
 import { CellComponent } from "./Cell/Cell.component.js";
 
 export function GridComponent() {
